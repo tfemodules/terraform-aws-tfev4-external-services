@@ -6,7 +6,7 @@ variable "pg_identifier_prefix" {
 
 variable "pg_subnet_ids" {
   type        = list(string)
-  description = "List of AWS subent ids to use for PostgreSQL DB subnet group."
+  description = "List of AWS subnet ids to use for PostgreSQL DB subnet group."
 }
 
 variable "pg_vpc_id" {
@@ -16,7 +16,7 @@ variable "pg_vpc_id" {
 
 variable "pg_allow_ingress_cidrs" {
   type        = list(string)
-  description = "CIDR to allow ingress traffic from."
+  description = "CIDRs to allow ingress traffic from."
 }
 
 variable "pg_instance_class" {
@@ -27,13 +27,13 @@ variable "pg_instance_class" {
 
 variable "pg_engine_version" {
   type        = string
-  description = "The engine versoin of the PostgreSQL instance."
+  description = "The engine version of the PostgreSQL instance."
   default     = "10.13"
 }
 
 variable "pg_allocated_storage" {
   type        = number
-  description = "Storage ammount to allocate for the PostgreSQL instance."
+  description = "Storage amount to allocate for the PostgreSQL instance."
   default     = 100
 }
 
@@ -51,7 +51,7 @@ variable "pg_multi_az" {
 
 variable "pg_parameter_group_name" {
   type        = string
-  description = "Name of the DB parameter group to associate"
+  description = "Name of the DB parameter group to associate."
   default     = null
 }
 
