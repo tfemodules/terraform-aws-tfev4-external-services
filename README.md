@@ -1,6 +1,5 @@
 # TFEv4 External Services
 
-
 Sets up the external services resources for TFEv4 deployment according to the [reference architecture](https://www.terraform.io/docs/enterprise/before-installing/reference-architecture/aws.html#infrastructure-diagram).
 
 The module will create
