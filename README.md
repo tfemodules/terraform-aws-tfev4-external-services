@@ -65,7 +65,7 @@ module "tfe_external_services" {
   pg_identifier_prefix   = "tfe-pg-instance-"
   pg_subnet_ids          = ["subnet-xxxx", "subnet-yyyy"]
   pg_vpc_id              = "vpc-xxxx"
-  pg_allow_ingress_cidrs = ["172.16.0.0/24", 172.16.1.0/24"]
+  pg_allow_ingress_cidrs = ["172.16.0.0/24", "172.16.1.0/24"]
   pg_password            = "pa$$w0rd"
 
   common_tags = {
