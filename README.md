@@ -57,7 +57,7 @@ An example of how the module can be used.
 
 ```hcl
 module "tfe_external_services" {
-  source = "git::https://github.com/tfemodules/terraform-aws-tfev4-network.git"
+  source = "git::https://github.com/tfemodules/terraform-aws-tfev4-external-services.git"
 
   s3_bucket_name  = "tfe-bucket"
   s3_force_delete = true
