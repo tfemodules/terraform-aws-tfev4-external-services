@@ -36,8 +36,8 @@ The input variables available for the module are in the table below.
 | pg_backup_retention_period | `number` | `0` | The days to retain backups for. Must be between 0 and 35. |
 | pg_db_name | `string` | `"tfe"` | The name of the database to create when the PostgreSQL instance is created. |
 | pg_username | `string` | `"postgres"` | Username for the master PostgreSQL instance user. |
-| pg_password | `string` | `"10.13"` | Password for the master PostgreSQL instance user. |
-| s3_bucket_name | `string` | `[]` | Name of the s3 bucket to create. |
+| pg_password | `string` | | Password for the master PostgreSQL instance user. |
+| s3_bucket_name | `string` | | Name of the s3 bucket to create. |
 | s3_force_delete | `bool` | | Whether all objects (including any locked objects) should be deleted from the bucket so that the bucket can be destroyed without error. |
 | common_tags | `map(string)` | `{}` | Tags to apply to all resources. |
 
