@@ -59,7 +59,7 @@ An example of how the module can be used.
 module "tfe_external_services" {
   source = "git::https://github.com/tfemodules/terraform-aws-tfev4-network.git"
 
-  vs3_bucket_name = "172.31.255.0/24"
+  s3_bucket_name  = "172.31.255.0/24"
   s3_force_delete = true
 
   pg_identifier_prefix   = "tfe-pg-instance-"
